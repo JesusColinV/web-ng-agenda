@@ -1,0 +1,16 @@
+<div class="card text-left bg-light" >
+  <img class="card-img-top" src="holder.js/100px180/" alt="">
+  <div *ngIf="listAppointmentC.length === 0" class="card-body">
+    <h4 class="card-title">No hay cita para mostrar</h4>
+  </div>
+  <h4 *ngIf="listAppointmentC.length != 0" class="card-title">Appointment list</h4>
+  <div *ngFor="let data of listAppointmentC; let i = index" class="card mt-2">
+    <div   class="card-body">
+        <p class="card-text"><span>Name:</span>{{ data.name }}</p>
+        <p class="card-text"><span>Date:</span>{{ data.date }}</p>
+        <p class="card-text"><span>Time:</span>{{ data.time }}</p>
+        <p class="card-text"><span>Syntoms:</span>{{ data.syntoms }}</p>
+        <button style="width: 100%;" class="btn btn-danger btn-block" (click)=deleteList(i)> Delete </button>
+    </div>
+  </div>
+</div>
