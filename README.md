@@ -1,4 +1,4 @@
-bt: Jesus Alejandro Colin Vilchis       
+by: Jesus Alejandro Colin Vilchis       
 https://web-ng-agenda-jacv.netlify.app
 
 # WebNgAgenda
